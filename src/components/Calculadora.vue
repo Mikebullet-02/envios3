@@ -12,12 +12,10 @@
           <h2 class="text-3xl md:ml-10 font-semibold text-center mt-5">
             Calculadora de peso volumétrico
           </h2>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4 pt-5 sm:mx-full"
-          >
-            <div class="flex items-center flex-row sm:flex-row sm:space-x-24">
+          <div class="grid grid-cols-1 gap-4 pt-5 mx-full">
+            <div class="flex items-center flex-row space-x-4">
               <label
-                class="block text-gray-700 text-base font-bold mr-7 sm:text-2xl"
+                class="block text-gray-700 text-base font-bold mr-7 text-2xl"
                 for="inline-alto"
                 >Alto:</label
               >
@@ -29,13 +27,13 @@
                 placeholder="Alto"
               />
               <span
-                class="flex-none text-gray-700 text-base font-bold ml-2 sm:text-2xl"
+                class="flex-none text-gray-700 text-base font-bold ml-2 text-2xl"
                 >cm</span
               >
             </div>
-            <div class="flex items-center flex-row sm:flex-row sm:space-x-24">
+            <div class="flex items-center flex-row space-x-4">
               <label
-                class="block text-gray-700 text-base font-bold mb-0 mr-3 sm:mr-1 sm:text-2xl"
+                class="block text-gray-700 text-base font-bold mb-0 mr-3 text-2xl"
                 for="inline-ancho"
                 >Ancho:</label
               >
@@ -47,13 +45,13 @@
                 placeholder="Ancho"
               />
               <span
-                class="flex-none text-gray-700 text-base font-bold ml-2 sm:text-2xl"
+                class="flex-none text-gray-700 text-base font-bold ml-2 text-2xl"
                 >cm</span
               >
             </div>
-            <div class="flex items-center flex-row sm:flex-row sm:space-x-24">
+            <div class="flex items-center flex-row space-x-4">
               <label
-                class="block text-gray-700 text-base font-bold mb-2 mr-5 sm:mr-4 sm:text-2xl"
+                class="block text-gray-700 text-base font-bold mb-2 mr-5 text-2xl"
                 for="inline-largo"
                 >Largo:</label
               >
@@ -65,7 +63,7 @@
                 placeholder="Largo"
               />
               <span
-                class="flex-none text-gray-700 text-base font-bold ml-2 sm:text-2xl"
+                class="flex-none text-gray-700 text-base font-bold ml-2 text-2xl"
                 >cm</span
               >
             </div>

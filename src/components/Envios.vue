@@ -3,9 +3,11 @@
     <h1 class="text-4xl font-black capitalize ml-5 sm:ml-24 pt-10 pb-5">
       TIPOS DE ENVÍOS
     </h1>
-    <div class="flex flex-wrap justify-center items-center gap-0 sm:gap-5">
+    <div
+      class="flex flex-wrap justify-center items-center gap-0 sm:gap-5 md:gap-4"
+    >
       <div
-        class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
+        class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
       >
         <div class="p-5">
           <h3
@@ -26,7 +28,7 @@
         />
       </div>
       <div
-        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
+        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
       >
         <div class="p-5">
           <h3
@@ -47,7 +49,7 @@
         />
       </div>
       <div
-        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
+        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
       >
         <div class="p-5">
           <h3
@@ -70,7 +72,7 @@
         />
       </div>
       <div
-        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
+        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
       >
         <div class="p-5">
           <h3

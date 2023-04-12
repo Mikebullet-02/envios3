@@ -27,7 +27,7 @@ app.post("/sendEmail", (req, res) => {
 
     const mailOptions = {
         from: "desarrollowebodm@gmail.com",
-        to: "eric@erictoman.site",
+        to: "mauriciodelgado1300@gmail.com",
         subject: "Nuevo cliente potencial",
         html: `
         <p>Nombre: ${url}</p>

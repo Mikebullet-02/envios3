@@ -7,11 +7,13 @@
   <div
     class="flex flex-col w-full sm:w-full px-3 lg:px-52 md:px-0 sm:lg:px-0 my-auto"
   >
-    <h1 class="text-4xl font-black capitalize ml-5 sm:ml-24 py-14">
+    <h1 class="text-4xl font-black capitalize ml-5 sm:ml-24 py-14 sm:py-15">
       COBERTURA DE ENVÍOS
     </h1>
     <div class="mx-auto">
-      <div class="flex flex-wrap justify-center pt-0 pb-10 sm:space-x-40">
+      <div
+        class="flex flex-wrap justify-center pt-0 pb-5 sm:pb-8 sm:space-x-40"
+      >
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 md:mb-0">
           <select
             v-model="origen"
@@ -52,9 +54,12 @@
               />
             </svg>
             <div>
-              <h2 class="text-4xl font-bold">Dirección</h2>
-              <h3 class="text-gray-500 text-2xl">De:</h3>
-              <p v-if="origen != null" class="text-3xl text-[#003386]">
+              <h2 class="text-2xl sm:text-4xl font-bold">Dirección</h2>
+              <h3 class="text-gray-500 text-xl sm:text-2xl">De:</h3>
+              <p
+                v-if="origen != null"
+                class="text-xl sm:text-3xl text-[#003386]"
+              >
                 {{ origen.ubicacion }}
               </p>
             </div>
@@ -98,9 +103,12 @@
               />
             </svg>
             <div>
-              <h2 class="text-4xl font-bold">Dirección</h2>
-              <h3 class="text-gray-500 text-2xl">A:</h3>
-              <p v-if="destino != null" class="text-3xl text-[#003368]">
+              <h2 class="text-2xl sm:text-4xl font-bold">Dirección</h2>
+              <h3 class="text-gray-500 text-xl sm:text-2xl">A:</h3>
+              <p
+                v-if="destino != null"
+                class="text-xl sm:text-3xl text-[#003386]"
+              >
                 {{ destino.direccion }}
               </p>
             </div>
@@ -109,20 +117,24 @@
       </div>
     </div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 sm:justify-items-center sm:place-items-center sm:px-80"
+      class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:justify-items-center sm:place-items-center sm:px-80"
     >
       <div
         v-if="destino != null"
         class="bg-gray-800 p-4 shadow rounded-lg sm:w-full"
       >
-        <h2 class="font-extrabold text-4xl text-center sm:pt-2 text-white">
+        <h2
+          class="font-extrabold text-3xl sm:text-4xl text-center sm:pt-2 text-white"
+        >
           Sobres
         </h2>
-        <h2 class="font-extrabold text-3xl text-center sm:pt-5 text-gray-300">
+        <h2
+          class="font-extrabold text-2xl sm:text-3xl text-center sm:pt-5 text-gray-300"
+        >
           Hasta 25 hojas
         </h2>
         <p
-          class="mt-0 sm:mt-4 text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
+          class="mt-0 sm:mt-4 text-2xl sm:text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
         >
           {{ formatterMXN.format(destino.precios.SOB) }}
         </p>
@@ -131,14 +143,18 @@
         v-if="destino != null"
         class="bg-gray-800 p-4 shadow rounded-lg sm:w-full"
       >
-        <h2 class="font-extrabold text-4xl text-center sm:pt-2 text-white">
+        <h2
+          class="font-extrabold text-3xl sm:text-4xl text-center sm:pt-2 text-white"
+        >
           Paquetes
         </h2>
-        <h2 class="font-extrabold text-3xl text-center sm:pt-5 text-gray-300">
+        <h2
+          class="font-extrabold text-2xl sm:text-3xl text-center sm:pt-5 text-gray-300"
+        >
           De 0 - 1 Kg.
         </h2>
         <p
-          class="mt-0 sm:mt-4 text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
+          class="mt-0 sm:mt-4 text-2xl sm:text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
         >
           {{ formatterMXN.format(destino.precios.PAQ) }}
         </p>
@@ -147,14 +163,18 @@
         v-if="destino != null"
         class="bg-gray-800 p-4 shadow rounded-lg sm:w-full"
       >
-        <h2 class="font-extrabold text-4xl text-center sm:pt-2 text-white">
+        <h2
+          class="font-extrabold text-3xl sm:text-4xl text-center sm:pt-2 text-white"
+        >
           Cajas
         </h2>
-        <h2 class="font-extrabold text-3xl text-center sm:pt-5 text-gray-300">
+        <h2
+          class="font-extrabold text-2xl sm:text-3xl text-center sm:pt-5 text-gray-300"
+        >
           De 1 - 10 Kg.
         </h2>
         <p
-          class="mt-0 sm:mt-4 text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
+          class="mt-0 sm:mt-4 text-2xl sm:text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
         >
           {{ formatterMXN.format(destino.precios.C1) }}
         </p>
@@ -163,30 +183,38 @@
         v-if="destino != null"
         class="bg-gray-800 p-4 shadow rounded-lg sm:w-full"
       >
-        <h2 class="font-extrabold text-4xl text-center sm:pt-2 text-white">
+        <h2
+          class="font-extrabold text-3xl sm:text-4xl text-center sm:pt-2 text-white"
+        >
           Cajas
         </h2>
-        <h2 class="font-extrabold text-3xl text-center sm:pt-5 text-gray-300">
+        <h2
+          class="font-extrabold text-2xl sm:text-3xl text-center sm:pt-5 text-gray-300"
+        >
           De 11 - 20 Kg.
         </h2>
         <p
-          class="mt-0 sm:mt-4 text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
+          class="mt-0 sm:mt-4 text-2xl sm:text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
         >
           {{ formatterMXN.format(destino.precios.C2) }}
         </p>
       </div>
       <div
         v-if="destino != null"
-        class="bg-gray-800 p-4 shadow rounded-lg sm:w-6/12 sm:col-span-2"
+        class="bg-gray-800 p-4 shadow rounded-lg sm:w-1/2 sm:col-span-2"
       >
-        <h2 class="font-extrabold text-4xl text-center sm:pt-2 text-white">
+        <h2
+          class="font-extrabold text-3xl sm:text-4xl text-center sm:pt-2 text-white"
+        >
           Maletas
         </h2>
-        <h2 class="font-extrabold text-3xl text-center sm:pt-5 text-gray-300">
+        <h2
+          class="font-extrabold text-2xl sm:text-3xl text-center sm:pt-5 text-gray-300"
+        >
           De 21 - 30 Kg.
         </h2>
         <p
-          class="mt-0 sm:mt-4 text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
+          class="mt-0 sm:mt-4 text-2xl sm:text-4xl text-center sm:pt-0 sm:pb-0 text-gray-50"
         >
           {{ formatterMXN.format(destino.precios.C3) }}
         </p>
@@ -194,7 +222,7 @@
     </div>
 
     <div
-      class="h-auto w-full pt-5 pb-5 mt-10 text-center bg-blue-900 text-white font-extrabold align-middle text-2xl pl-0 pr-0 px-3"
+      class="h-auto w-full pt-5 pb-5 mt-5 text-center bg-blue-900 text-white font-extrabold align-middle text-2xl pl-0 pr-0 px-3"
     >
       <p>***VALOR DE REFERENCIA SUJETO A CAMBIOS***</p>
     </div>

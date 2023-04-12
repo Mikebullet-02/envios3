@@ -42,7 +42,7 @@
           class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 spacey- md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
         >
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
           >
             <router-link to="/Envios"
               >Tipos <br />
@@ -51,7 +51,7 @@
           </li>
 
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
           >
             <a href="#"
               >Cobertura <br />
@@ -59,7 +59,7 @@
             >
           </li>
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
           >
             <a href="#"
               >Calcula<br />
@@ -67,7 +67,7 @@
             >
           </li>
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
           >
             <a href="#"
               >Tarifas<br />

@@ -2,12 +2,8 @@
 module.exports = {
   content: [],
   theme: {
-   
-    extend: {
-      colors: {
-        'odm':'#003368',
-      }
-    },
+
+    extend: {},
   },
   plugins: [],
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
