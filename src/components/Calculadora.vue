@@ -3,10 +3,15 @@
     <h1 class="text-4xl font-black capitalize ml-5 sm:ml-24 py-14">
       CALCULA EL PESO DE TU PAQUETE
     </h1>
-    <div class="my-5 mb-0">
+    <div class="my-0 mb-0">
       <div class="flex flex-col justify-center items-center">
         <div class="flex flex-wrap xl:justify-center">
-          <img src="../assets/Calculadora.png" class="h-auto max-w-sm" alt="" />
+          <img
+            src="../assets/Calculadora.webp"
+            onerror="this.src='../assets/Calculadora.png'"
+            class="h-auto w-72 sm:w-96"
+            alt="CajaCalculadora"
+          />
         </div>
         <div class="bg-[#D9D9D9] max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl md:ml-10 font-semibold text-center mt-5">
@@ -75,7 +80,7 @@
                 class="block text-black text-4xl font-semibold text-center sm:text-left"
               >
                 El peso total de tu paquete es:
-                <p class="text-center text-red-500">{{ peso }} Kg</p>
+                <p class="text-center text-black">{{ peso }} Kg</p>
               </span>
             </div>
           </div>

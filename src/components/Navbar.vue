@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:bg-transparent sm:pt-5 sticky top-0 z-10 relative">
+  <div class="sm:bg-transparent sm:pt-5 top-0 z-10 sticky">
     <nav
       class="pl-0 px-6 pt-3 sm:py-8 mr-4 md:mr-32 mx-auto md:flex md:justify-between md:items-center sm:order-first"
     >
@@ -28,7 +28,8 @@
       </div>
       <div class="w-auto relative">
         <img
-          src="../assets/ODMenvios.png"
+          src="../assets/ODMenvios.webp"
+          onerror="this.src='../assets/ODMenvios.png'"
           class="sm:hidden w-52 h-auto m-5 bg-gray-200"
           :class="showMenu ? 'flex' : 'hidden'"
         />
@@ -42,7 +43,7 @@
           class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 spacey- md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
         >
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
           >
             <router-link to="/Envios"
               >Tipos <br />
@@ -51,7 +52,7 @@
           </li>
 
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
           >
             <a href="#"
               >Cobertura <br />
@@ -59,7 +60,7 @@
             >
           </li>
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
           >
             <a href="#"
               >Calcula<br />
@@ -67,7 +68,7 @@
             >
           </li>
           <li
-            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368] hover:scale-105 transition duration-500 ease-in-out transform"
+            class="hover:text-blue-600 mt-3 mb-3 font-extrabold text-2xl text-center text-white md:text-[#003368] xl:text-[#003368]"
           >
             <a href="#"
               >Tarifas<br />

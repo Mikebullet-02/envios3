@@ -7,7 +7,7 @@
       class="flex flex-wrap justify-center items-center gap-0 sm:gap-5 md:gap-4"
     >
       <div
-        class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
+        class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
       >
         <div class="p-5">
           <h3
@@ -23,12 +23,13 @@
         </div>
         <img
           class="mr-5 sm:w-40 sm:h-28 w-32 h-24 mt-[-100px] sm:mx-auto ml-48 sm:mt-16 sm:mb-5"
-          src="../assets/SobreODM.png"
-          alt="Image Description"
+          src="../assets/sobreODM.webp"
+          onerror="this.src='../assets/sobreODM.png'"
+          alt="Sobre"
         />
       </div>
       <div
-        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
+        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
       >
         <div class="p-5">
           <h3
@@ -44,12 +45,13 @@
         </div>
         <img
           class="mr-5 sm:w-36 sm:h-36 w-32 h-24 mt-[-100px] sm:mx-auto ml-48 sm:mt-7 sm:mb-0"
-          src="../assets/cajaODM.png"
-          alt="Image Description"
+          src="../assets/cajaODM.webp"
+          onerror="this.src='../assets/cajaODM.png'"
+          alt="Paquete"
         />
       </div>
       <div
-        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
+        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
       >
         <div class="p-5">
           <h3
@@ -67,12 +69,13 @@
         </div>
         <img
           class="mr-5 sm:w-40 sm:h-40 w-32 h-36 mt-[-150px] sm:mx-auto ml-48 sm:mt-[-5px] sm:mb-0"
-          src="../assets/cajaODM.png"
-          alt="Image Description"
+          src="../assets/cajaODM.webp"
+          onerror="this.src='../assets/cajaODM.png'"
+          alt="Paquetes"
         />
       </div>
       <div
-        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96 hover:scale-105 transition duration-500 ease-in-out transform"
+        class="flex flex-col max-w-md bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 my-3 sm:my-0 sm:w-72 md:w-72 lg:w-72 xl:w-72 sm:h-96"
       >
         <div class="p-5">
           <h3
@@ -90,8 +93,9 @@
         </div>
         <img
           class="mr-5 sm:w-24 sm:h-36 w-32 h-36 mt-[-150px] sm:mx-auto ml-48 sm:mt-0 sm:mb-0"
-          src="../assets/maleta.png"
-          alt="Image Description"
+          src="../assets/maleta.webp"
+          onerror="this.src='../assets/maleta.png'"
+          alt="Maletas"
         />
       </div>
     </div>

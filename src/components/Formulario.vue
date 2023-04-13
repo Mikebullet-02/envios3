@@ -61,11 +61,11 @@
                   v-model="email"
                 />
               </div>
-              <div class="flex flex-col mt-5">
+              <div class="flex flex-col mt-5 space-y-5 ml-5">
                 <label class="inline-flex items-center">
                   <input
                     type="radio"
-                    class="form-radio"
+                    class="form-radio w-7 h-7 sm:w-6 sm:h-6"
                     v-model="selectedOption"
                     value="20 a 50 envíos mensuales"
                     name="option"
@@ -75,7 +75,7 @@
                 <label class="inline-flex items-center">
                   <input
                     type="radio"
-                    class="form-radio"
+                    class="form-radio w-7 h-7 sm:w-6 sm:h-6"
                     v-model="selectedOption"
                     value="más de 50 envíos mensuales"
                     name="option"
@@ -137,14 +137,16 @@
               ></div>
             </form>
             <div
-              class="bg-white dark:bg-white sm:rounded-lg sm:pl-32 order-first sm:order-last"
+              class="bg-white sm:rounded-lg ml-2 sm:ml-32 order-first sm:order-last"
             >
               <div
                 class="flex items-center mt-8 text-gray-600 dark:text-gray-400"
               >
                 <img
-                  src="../assets/Persona.png"
+                  src="../assets/Persona.webp"
+                  onerror="this.src='../assets/Persona.png'"
                   class="sm:w-auto h-48 pl-28 sm:h-72 sm:pl-28"
+                  alt="Persona"
                 />
               </div>
 
@@ -242,7 +244,16 @@ import { userDatabaseStore } from "../stores/database.js";
 const databaseStore = userDatabaseStore();
 const showModal = ref(false);
 const toggleModal = () => {
-  showModal.value = !showModal.value;
+  if (
+    this.url &&
+    this.telefono &&
+    this.empresa &&
+    this.ciudad &&
+    this.email &&
+    this.selectedOption
+  ) {
+    this.showModal = !this.showModal;
+  }
 };
 const closeModal = () => {
   showModal.value = false;
