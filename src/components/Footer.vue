@@ -37,7 +37,11 @@
           </a>
         </div>
       </nav>
-      <img src="../assets/logoblanco.webp" alt="Logo" class="w-80 h-auto mx-auto" />
+      <img
+        src="../assets/logoblanco.webp"
+        alt="Logo"
+        class="w-80 h-28 mx-auto"
+      />
       <div class="flex justify-center mt-8 space-x-6">
         <a href="#" class="text-white hover:text-neutral-600">
           <span class="sr-only">Facebook</span>
@@ -98,10 +102,14 @@
           </svg>
         </a>
       </div>
-      <p class="mt-8 text-base leading-6 text-center text-white hover:text-neutral-600">
-        <a href="https://odm.com.mx/aviso-privacidad">Aviso de privacidad | Políticas de viaje</a>
+      <p
+        class="mt-8 text-base leading-6 text-center text-white hover:text-neutral-600"
+      >
+        <a href="https://odm.com.mx/aviso-privacidad"
+          >Aviso de privacidad | Políticas de viaje</a
+        >
       </p>
-      <p class="mt-8 text-base leading-6 text-center text-white ">
+      <p class="mt-8 text-base leading-6 text-center text-white">
         © 2023 Ómnibus de México. Todos los derechos reservados.
       </p>
     </div>

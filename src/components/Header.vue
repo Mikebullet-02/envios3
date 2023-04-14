@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen sm:w-auto">
+  <div class="w-screen sm:w-auto sm:pt-5">
     <div
       class="bg-inherit py-5 px-6 sm:py-5 sm:px-16 lg:py-16 lg:px-48 text-start text-neutral-800"
     >
@@ -36,7 +36,7 @@
         <button
           class="bg-[#003368] h-24 sm:h-20 hover:bg-blue-600 text-white text-xl sm:text-4xl font-extrabold py-2 px-14 sm:py-2 sm:px-18"
         >
-          TARIFAS PREFERENCIALES
+          <a href="#tarifas">TARIFAS PREFERENCIALES</a>
         </button>
       </div>
       <div
