@@ -1,11 +1,30 @@
 import express from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
+import path from "path";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+const mimeTypes = {
+    "html": "text/html",
+    "css": "text/css",
+    "js": "text/javascript",
+    "png": "image/png",
+    "jpg": "image/jpeg",
+    "gif": "image/gif",
+}
+
+app.use(express.static(path.join(__dirname, "public"), {
+    setHeaders: (res, path) => {
+        const ext = path.split(".").pop();
+        if (mimeTypes[ext]) {
+            res.setHeader("Content-Type", mimeTypes[ext]);
+        }
+    }
+}));
 
 app.post("/sendEmail", (req, res) => {
     const {
@@ -27,16 +46,19 @@ app.post("/sendEmail", (req, res) => {
 
     const mailOptions = {
         from: "desarrollowebodm@gmail.com",
-        to: "mauriciodelgado1300@gmail.com",
-        cc: ['cc1@example.com', 'cc2@example.com'],
+        to: "jcmurillo@odm.com.mx",
+        cc: ['cma@odm.com.mx', 'jefedigitalodm@gmail.com'],
         subject: "Nuevo cliente potencial",
         html: `
+        <div>
+        <img src="https://odm.com.mx/images/ODMenvios.png" alt="logo" border="0" width="300" height="auto" />
+        <h1>¡Nuevo cliente potencial!</h1>
         <p>Nombre: ${url}</p>
         <p>Teléfono: ${telefono}</p>
         <p>Empresa: ${empresa}</p>
         <p>Ciudad: ${ciudad}</p>
         <p>Email: ${email}</p>
-        <p>Opción elegida: ${selectedOption}</p>
+        <p>Opción elegida: ${selectedOption}</p></div>
       `,
     };
 
