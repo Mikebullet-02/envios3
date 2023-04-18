@@ -11,9 +11,14 @@
     id="cobertura"
     class="flex flex-col w-full sm:w-full px-3 lg:px-52 md:px-0 sm:lg:px-0 my-auto"
   >
-    <h1 class="text-4xl font-black capitalize ml-5 sm:ml-24 py-14 sm:py-15">
+    <h1
+      class="text-4xl font-black capitalize ml-5 sm:ml-24 pt-16 pb-5 sm:pt-15 sm:pb-5"
+    >
       COBERTURA DE ENVÍOS
     </h1>
+    <h2 class="text-2xl font-regular ml-5 sm:ml-28 pb-8">
+      Selecciona la ciudad desde donde envías tu paquete y el destino.
+    </h2>
     <div class="mx-auto">
       <div
         class="flex flex-wrap justify-center pt-0 pb-5 sm:pb-8 sm:space-x-40"

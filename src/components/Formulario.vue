@@ -84,9 +84,9 @@
                 </label>
               </div>
 
-              <div class="pt-5 sm:pt-10 sm:flex sm:justify-center">
+              <div class="pt-5 sm:pt-5 sm:flex sm:justify-center">
                 <button
-                  class="bg-[#003368] py-3 h-32 text-white active:bg-[#D9D9D9] font-bold uppercase text-2xl px-20 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-22 sm:mr-1 mb-1 ease-linear transition-all duration-150 sm:px-14"
+                  class="bg-[#003368] h-20 sm:h-20 hover:bg-blue-600 text-white text-xl sm:text-2xl font-extrabold py-2 px-14 sm:py-2 sm:px-18"
                   type="submit"
                   v-on:click="toggleModal()"
                 >
@@ -139,8 +139,7 @@
                 class="flex items-center mt-8 text-gray-600 dark:text-gray-400"
               >
                 <img
-                  src="../assets/Persona.webp"
-                  onerror="this.src='../assets/Persona.png'"
+                  src="../assets/Persona.png"
                   class="sm:w-auto h-48 pl-28 sm:h-72 sm:pl-28"
                   alt="Persona"
                 />
@@ -171,10 +170,14 @@
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-80">
+                <a
+                  href="https://www.google.com/maps/place/Omnibus+de+Mexico/@19.5076497,-99.1495358,19.26z/data=!4m9!1m2!2m1!1sodm!3m5!1s0x85d1f83442ec5435:0x34b308b875da2b9!8m2!3d19.5078091!4d-99.1493576!16s%2Fg%2F1tcyftcs"
+                  target="_blank"
+                  class="ml-4 text-md tracking-wide font-semibold w-80"
+                >
                   Av Central 56, Nueva Industrial Vallejo, Gustavo A. Madero,
                   07700 Ciudad de México, CDMX
-                </div>
+                </a>
               </div>
 
               <div
@@ -196,9 +199,12 @@
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                <a
+                  href="tel:+525551414300"
+                  class="ml-4 text-md tracking-wide font-semibold w-40"
+                >
                   55-51-41-43-00
-                </div>
+                </a>
               </div>
 
               <div
@@ -271,10 +277,6 @@ const handleSubmit = () => {
     !email.value
   ) {
     alert("Por favor llena todos los campos");
-    return;
-  }
-  if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)) {
-    alert("Por favor ingresa un correo válido");
     return;
   }
   databaseStore.addUrl(

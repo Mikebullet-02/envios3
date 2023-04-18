@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen sm:w-auto sm:pt-5">
+  <div class="w-screen sm:w-auto sm:pt-6">
     <div
       class="bg-inherit py-5 px-6 sm:py-5 sm:px-16 lg:py-16 lg:px-48 text-start text-neutral-800"
     >
@@ -10,9 +10,9 @@
         <p>LOGÍSTICA PARA TU</p>
         <p>EMPRESA</p>
       </h1>
-      <div class="mx-auto max-w-[900px] sm:ml-5">
+      <div class="mx-auto max-w-[900px] ml-5 sm:ml-20">
         <ul
-          class="list-none flex flex-col space-y-2 py-5 sm:pt-5 pb-5 text-lg sm:text-3xl text-gray-800"
+          class="list-disc flex flex-col space-y-2 py-5 sm:pt-5 pb-5 text-lg sm:text-2xl text-gray-800"
         >
           <li>Tarifas preferenciales para empresas</li>
           <li>
@@ -20,7 +20,7 @@
             <p class="text-gray-500 inline">(sin costo extra)</p>
           </li>
           <li>
-            Cobertura en zonas extendidad
+            Cobertura en zonas extendidas
             <p class="text-gray-500 inline">(sin costo extra)</p>
           </li>
           <li>
@@ -34,7 +34,7 @@
         class="mx-auto sm:w-auto sm:pt-[-100px] lg:pt-5 sm:ml-20 sm:py-20 sm:px-20"
       >
         <button
-          class="bg-[#003368] h-24 sm:h-20 hover:bg-blue-600 text-white text-xl sm:text-4xl font-extrabold py-2 px-14 sm:py-2 sm:px-18"
+          class="bg-[#003368] h-20 sm:h-20 hover:bg-blue-600 text-white text-xl sm:text-2xl font-extrabold py-2 px-14 sm:py-2 sm:px-18"
         >
           <a href="#tarifas">TARIFAS PREFERENCIALES</a>
         </button>

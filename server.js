@@ -1,30 +1,13 @@
 import express from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
-import path from "path";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-const mimeTypes = {
-    "html": "text/html",
-    "css": "text/css",
-    "js": "text/javascript",
-    "png": "image/png",
-    "jpg": "image/jpeg",
-    "gif": "image/gif",
-}
 
-app.use(express.static(path.join(__dirname, "public"), {
-    setHeaders: (res, path) => {
-        const ext = path.split(".").pop();
-        if (mimeTypes[ext]) {
-            res.setHeader("Content-Type", mimeTypes[ext]);
-        }
-    }
-}));
 
 app.post("/sendEmail", (req, res) => {
     const {
@@ -54,7 +37,7 @@ app.post("/sendEmail", (req, res) => {
         <img src="https://odm.com.mx/images/ODMenvios.png" alt="logo" border="0" width="300" height="auto" />
         <h1>¡Nuevo cliente potencial!</h1>
         <p>Nombre: ${url}</p>
-        <p>Teléfono: ${telefono}</p>
+        <p>Teléfono: <a href="tel:${telefono}">${telefono}</a></p>
         <p>Empresa: ${empresa}</p>
         <p>Ciudad: ${ciudad}</p>
         <p>Email: ${email}</p>

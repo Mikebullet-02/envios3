@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:bg-transparent top-0 z-10 sticky absolute">
+  <div class="sm:bg-white top-0 z-10 sticky absolute">
     <nav
       class="pl-0 px-6 sm:py-5 mr-4 md:mr-32 mx-auto md:flex md:justify-between md:items-center sm:order-first"
     >
@@ -7,7 +7,7 @@
         <!-- Mobile menu button -->
         <div
           @click="toggleNav"
-          class="flex md:hidden ml-auto active:bg-[#D9D9D9]"
+          class="flex md:hidden ml-auto bg-white bg-opacity-70"
         >
           <button
             type="button"
@@ -25,8 +25,13 @@
       </div>
       <div class="hidden md:block">
         <ul
-          class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 spacey- md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
+          class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
         >
+          <img
+            src="../assets/ODMenvios.webp"
+            onerror="this.src='../assets/ODMenvios.png'"
+            class="w-48 mr-[130px]"
+          />
           <Links />
         </ul>
       </div>
@@ -37,20 +42,20 @@
           :class="showMenu ? 'bg-black opacity-25' : ''"
           class="absolute w-screen h-screen"
         ></div>
-        <div class="absolute w-3/4" @click="toggleNav">
+        <div class="absolute w-3/4 bg-gray-200" @click="toggleNav">
           <img
             src="../assets/ODMenvios.webp"
             onerror="this.src='../assets/ODMenvios.png'"
-            class="sm:hidden w-full bg-gray-200"
+            class="sm:hidden w-full p-8"
             :class="showMenu ? 'flex' : 'hidden'"
           />
           <ul
             :class="
               showMenu
-                ? 'flex flex-col justify-start items-center opacity-100 w-full'
+                ? 'flex flex-col justify-start opacity-100 w-full'
                 : 'hidden'
             "
-            class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 spacey- md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
+            class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
           >
             <Links />
           </ul>

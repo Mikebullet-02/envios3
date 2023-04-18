@@ -77,10 +77,21 @@
           <div class="my-4">
             <div class="flex items-center justify-center">
               <span
-                class="block text-black text-4xl font-semibold text-center sm:text-left"
+                class="block text-black text-2xl font-semibold text-center sm:text-left"
               >
                 El peso total de tu paquete es:
-                <p class="text-center text-black">{{ peso }} Kg</p>
+                <p
+                  class="text-center text-4xl"
+                  :class="{
+                    'text-red-600': peso > 30,
+                    'text-black': peso <= 30,
+                  }"
+                >
+                  {{ peso }} Kg
+                </p>
+                <p class="text-red-600 text-center" v-if="peso > 30">
+                  ¡Excede el peso máximo!
+                </p>
               </span>
             </div>
           </div>
@@ -97,8 +108,8 @@
 </template>
 
 <script setup>
+import { def } from "@vue/shared";
 import { computed, ref } from "vue";
-
 const calculos = ref({
   largo: 0,
   ancho: 0,
