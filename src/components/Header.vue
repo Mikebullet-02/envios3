@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen sm:w-auto sm:pt-6">
+  <div class="w-screen sm:w-auto">
     <div
       class="bg-inherit py-5 px-6 sm:py-5 sm:px-16 lg:py-16 lg:px-48 text-start text-neutral-800"
     >
@@ -31,7 +31,7 @@
       </div>
 
       <div
-        class="mx-auto sm:w-auto sm:pt-[-100px] lg:pt-5 sm:ml-20 sm:py-20 sm:px-20"
+        class="mx-auto sm:w-auto sm:pt-[-100px] lg:pt-5 sm:ml-20 sm:py-0 sm:px-20 md:py-15 2xl:py-16"
       >
         <button
           class="bg-[#003368] h-20 sm:h-20 hover:bg-blue-600 text-white text-xl sm:text-2xl font-extrabold py-2 px-14 sm:py-2 sm:px-18"
@@ -40,10 +40,11 @@
         </button>
       </div>
       <div
-        class="flex flex-auto mx-auto w-auto sm:w-80 h-auto mr-44 lg:mt-[-675px] opacity-0 2xl:opacity-100 hidden 2xl:block"
+        class="flex flex-auto mx-auto w-72 sm:w-80 h-auto mr-28 sm:mt-[-600px] opacity-0 2xl:opacity-100 hidden 2xl:block"
       >
         <img
           src="../assets/personajeODM.webp"
+          class="h-[510px] mr-36 w-auto xl:ml-0"
           onerror="this.src='../assets/personajeODM.png'"
           alt="Personaje"
         />

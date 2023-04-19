@@ -29,7 +29,7 @@
                 v-model="calculos.alto"
                 type="text"
                 name="inline-alto"
-                placeholder="Alto"
+                placeholder="Ingresa el alto"
               />
               <span
                 class="flex-none text-gray-700 text-base font-bold ml-2 text-2xl"
@@ -47,7 +47,7 @@
                 v-model="calculos.ancho"
                 type="text"
                 name="inline-ancho"
-                placeholder="Ancho"
+                placeholder="Ingresa el ancho"
               />
               <span
                 class="flex-none text-gray-700 text-base font-bold ml-2 text-2xl"
@@ -65,7 +65,7 @@
                 v-model="calculos.largo"
                 type="text"
                 name="inline-largo"
-                placeholder="Largo"
+                placeholder="Ingresa el largo"
               />
               <span
                 class="flex-none text-gray-700 text-base font-bold ml-2 text-2xl"
@@ -90,7 +90,7 @@
                   {{ peso }} Kg
                 </p>
                 <p class="text-red-600 text-center" v-if="peso > 30">
-                  ¡Excede el peso máximo!
+                  ¡Peso máximo excedido!
                 </p>
               </span>
             </div>
@@ -111,9 +111,9 @@
 import { def } from "@vue/shared";
 import { computed, ref } from "vue";
 const calculos = ref({
-  largo: 0,
-  ancho: 0,
-  alto: 0,
+  largo: "",
+  ancho: "",
+  alto: "",
 });
 const peso = computed({
   get: () => {
